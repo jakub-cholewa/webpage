@@ -103,28 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@jakub-cholewa 
-github
-/
-gitignore
-3.1k
-100k
-52.7k
- Code Pull requests 122 Actions Projects 0 Security 0 Insights
-gitignore/Global/JetBrains.gitignore
-@bitbonk bitbonk Include Rider as a supported IDE (#3323)
-599646e on 28 Feb
-@bamapookie@thunsaker@samskiter@LazarusX@arcresu@akelsch@victorhaggqvist@DKroot@davidkron@shiftkey@twhitbeck@tsteinholz@tomsquest@stuckj@ssinss@scadgek@rocketraman@RobertoNovelo@Cantido@petermorlion@OmarShaikh42@nfcopier@meyerlasse@koppor@KenjiOhtsuka@jturmel
-71 lines (56 sloc)  1.48 KB
-  
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
