@@ -1,17 +1,26 @@
-import React from "react";
-// nodejs library that concatenates classes
-// nodejs library to set properties for components
-import PropTypes from "prop-types";
-// @material-ui/core components
-// import {makeStyles} from "@material-ui/core/styles";
-// import AppBar from "@material-ui/core/AppBar";
-// import Toolbar from "@material-ui/core/Toolbar";
-// @material-ui/icons
-// core components
-// import styles from "assets/jss/material-kit-react/components/dropDownTableStyle.js";
-import {Container, Navbar, NavbarBrand} from "reactstrap";
+/*!
 
-// const useStyles = makeStyles(styles);
+=========================================================
+* BLK Design System React - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/blk-design-system-react
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+import React from "react";
+
+import PropTypes from "prop-types";
+
+// reactstrap components
+import {Container, Navbar, NavbarBrand} from "reactstrap";
 
 export default function DropDownTable(props) {
     const [mobileOpen, setMobileOpen] = React.useState(false);

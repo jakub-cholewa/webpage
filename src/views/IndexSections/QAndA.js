@@ -1,8 +1,6 @@
 /*!
 
 =========================================================
-* BLK Design System React - v1.0.0
-=========================================================
 
 * Product Page: https://www.creative-tim.com/product/blk-design-system-react
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
@@ -18,8 +16,8 @@
 import React from "react";
 // reactstrap components
 import DropDownTable from "components/DropDownTable/DropDownTable";
-import dataPL from "components/DropDownTable/DropDownTableDataInput/DropDownTableDataInput__pl.jsx";
-import dataANG from "components/DropDownTable/DropDownTableDataInput/DropDownTableDataInput__ang.jsx";
+import dataPL from "assets/text/DropDownTableDataInput/DropDownTableDataInput__pl.js";
+import dataANG from "assets/text/DropDownTableDataInput/DropDownTableDataInput__ang.js";
 
 
 class QAndA extends React.Component {
