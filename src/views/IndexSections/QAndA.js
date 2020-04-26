@@ -18,9 +18,20 @@ import React from "react";
 import DropDownTable from "components/DropDownTable/DropDownTable";
 import dataPL from "assets/text/DropDownTableDataInput/DropDownTableDataInput__pl.js";
 import dataANG from "assets/text/DropDownTableDataInput/DropDownTableDataInput__ang.js";
+import {FormGroup, Input} from "reactstrap";
 
 
 class QAndA extends React.Component {
+
+
+    constructor(){
+        super();
+
+        this.state ={
+            search:null
+        };
+
+    }
 
     render() {
 
@@ -36,7 +47,11 @@ class QAndA extends React.Component {
         );
 
         return (
+
             <div className="section section-navbars">
+                <FormGroup>
+                    <Input defaultValue="" placeholder="Regular" type="text" />
+                </FormGroup>
 
                 <div id="navbar">
                     <div className="qa-example">
