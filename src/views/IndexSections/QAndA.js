@@ -18,6 +18,7 @@ import React from "react";
 import DropDownTable from "components/DropDownTable/DropDownTable";
 import dataPL from "assets/text/DropDownTableDataInput/DropDownTableDataInput__pl.js";
 import dataANG from "assets/text/DropDownTableDataInput/DropDownTableDataInput__ang.js";
+import text from "assets/text/QandA.js";
 import {FormGroup, Input} from "reactstrap";
 import Container from "reactstrap/es/Container";
 
@@ -42,7 +43,7 @@ class QAndA extends React.Component {
 
         let data = this.props.lang === "pl" ? dataPL : dataANG;
 
-        let searchPlaceHolder = this.props.lang === "pl" ? "Wyszukaj pytanie" : "Search for the question";
+        let searchPlaceHolder = text.searchPlaceHolder[this.props.lang];
 
         let items = data.filter((item) => {
             if (this.state.search == "")
@@ -62,6 +63,9 @@ class QAndA extends React.Component {
             <div className="section section-navbars">
 
                 <Container>
+                    <h1>
+                        {text.title[this.props.lang]}
+                    </h1>
                     <FormGroup>
                         <Input defaultValue="" placeholder={searchPlaceHolder} type="text" onChange={(e) => this.searchFunc(e)}/>
                     </FormGroup>
