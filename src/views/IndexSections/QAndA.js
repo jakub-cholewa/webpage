@@ -45,7 +45,7 @@ class QAndA extends React.Component {
         let items = data.filter((item) => {
             if (this.state.search == "")
                 return item
-            else if (item.tags.some(tag => this.state.search.toLowerCase().includes(tag)))
+            else if (item.tags.map(tag => tag.toLowerCase()).some(tag => this.state.search.toLowerCase().includes(tag)))
                 return item
         }).map((item, idx) =>
             <DropDownTable
