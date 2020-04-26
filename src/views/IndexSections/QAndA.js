@@ -42,6 +42,8 @@ class QAndA extends React.Component {
 
         let data = this.props.lang === "pl" ? dataPL : dataANG;
 
+        let searchPlaceHolder = this.props.lang === "pl" ? "Wyszukaj pytanie" : "Search for the question";
+
         let items = data.filter((item) => {
             if (this.state.search == "")
                 return item
@@ -61,7 +63,7 @@ class QAndA extends React.Component {
 
                 <Container>
                     <FormGroup>
-                        <Input defaultValue="" placeholder="Regular" type="text" onChange={(e) => this.searchFunc(e)}/>
+                        <Input defaultValue="" placeholder={searchPlaceHolder} type="text" onChange={(e) => this.searchFunc(e)}/>
                     </FormGroup>
                 </Container>
                 <div id="navbar">
