@@ -23,10 +23,6 @@ import PropTypes from "prop-types";
 import {Container, Navbar, NavbarBrand} from "reactstrap";
 
 export default function DropDownTable(props) {
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-    const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
-    };
 
     const {a, b, colorA, colorB} = props;
 
@@ -34,8 +30,8 @@ export default function DropDownTable(props) {
     let questionColor = colorB;
 
 
-    if (colorA == undefined) answerColor = "navbar-transparent";
-    if (colorB == undefined) questionColor = "bg-info";
+    if (colorA === undefined) answerColor = "navbar-transparent";
+    if (colorB === undefined) questionColor = "bg-info";
 
 
     const rowItem = <RowItem q={a} a={b} answerColor={answerColor} questionColor={questionColor}/>;

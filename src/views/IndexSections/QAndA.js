@@ -18,15 +18,36 @@ import React from "react";
 import DropDownTable from "components/DropDownTable/DropDownTable";
 import dataPL from "assets/text/DropDownTableDataInput/DropDownTableDataInput__pl.js";
 import dataANG from "assets/text/DropDownTableDataInput/DropDownTableDataInput__ang.js";
+import {FormGroup, Input} from "reactstrap";
+import Container from "reactstrap/es/Container";
 
 
 class QAndA extends React.Component {
+
+    constructor() {
+        super();
+
+        this.state = {
+            search: ""
+        };
+    }
+
+    searchFunc = (event) => {
+        let keyword = event.target.value;
+        this.setState({search: keyword})
+    }
+
 
     render() {
 
         let data = this.props.lang === "pl" ? dataPL : dataANG;
 
-        let items = data.map((item, idx) =>
+        let items = data.filter((item) => {
+            if (this.state.search == "")
+                return item
+            else if (item.tags.some(tag => this.state.search.toLowerCase().includes(tag)))
+                return item
+        }).map((item, idx) =>
             <DropDownTable
                 colorA={item.answerColor}
                 colorB={item.questionColor}
@@ -38,6 +59,11 @@ class QAndA extends React.Component {
         return (
             <div className="section section-navbars">
 
+                <Container>
+                    <FormGroup>
+                        <Input defaultValue="" placeholder="Regular" type="text" onChange={(e) => this.searchFunc(e)}/>
+                    </FormGroup>
+                </Container>
                 <div id="navbar">
                     <div className="qa-example">
 

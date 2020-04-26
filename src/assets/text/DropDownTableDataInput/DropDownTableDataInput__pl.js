@@ -1,11 +1,14 @@
 const data = [
     {
         question: "Masz pytanie?",
-        answer: "Masz Odpowiedź"
+        answer: "Masz Odpowiedź",
+        tags: ["smieszek", "zart"]
     },
     {
         question: "Jak wstawić własne pytania??",
-        answer: "Wpisać zgodnie z przykładami w pliku : src/components/DropDownTable/DropDownTableDataInput__pl.js"
+        answer: "Wpisać zgodnie z przykładami w plikach : src/assets/text/DropDownTableDataInput." +
+            "Pola obowiązkowe to : question, answer, tags",
+        tags: ["wstawić", "pytanie", "wstawiać", "ważne", "zacząć", "początek"]
     },
     {
         question: "Mogę zmienić kolory?",
@@ -16,7 +19,8 @@ const data = [
             "bg-success," +
             "bg-info," +
             "bg-primary",
-        questionColor:"bg-success",
+        tags: ["kolor", "kolory", "zmiana"],
+        questionColor: "bg-success",
         answerColor: "bg-warning"
 
     },
@@ -26,11 +30,13 @@ const data = [
             "            color=\"rose\"\n" +
             "            a={item.question}\n" +
             "            b={item.answer}\n" +
-            "        />, ale po co??"
+            "        />, ale po co??",
+        tags: ["reczne", "recznie", "zmiana"]
     },
     {
         question: "KTO?",
-        answer: "JA"
+        answer: "JA",
+        tags: ["kto", "autor"]
     },
     {
         question: "Jaka to lektura?",
@@ -39,7 +45,8 @@ const data = [
             "brzegi rzeki były strome i mało dostępne. Ale było już późno i drapieżnicy poukrywali\n" +
             "się widocznie po nocnych łowach w skalistych jaskiniach. Koń chrapał trochę, wietrząc\n" +
             "niedawne ślady lwów czy też panter, jednakże Staś przejechał szczęśliwie i w chwilę później ujrzał na wysokim cyplu czarną wielką sylwetkę „Krakowa”. Pierwszy raz w Ayce\n" +
-            "miał takie uczucie, jakby przyjechał do domu."
+            "miał takie uczucie, jakby przyjechał do domu.",
+        tags: ["długi", "lektura", "długie"]
     }
 ];
 
