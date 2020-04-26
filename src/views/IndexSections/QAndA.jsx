@@ -18,10 +18,15 @@
 import React from "react";
 // reactstrap components
 import DropDownTable from "components/DropDownTable/DropDownTable";
-import data from "components/DropDownTable/DropDownTableDataInput.jsx";
+import dataPL from "components/DropDownTable/DropDownTableDataInput/DropDownTableDataInput__pl.jsx";
+import dataANG from "components/DropDownTable/DropDownTableDataInput/DropDownTableDataInput__ang.jsx";
+
 
 class QAndA extends React.Component {
+
     render() {
+
+        let data = this.props.lang === "pl" ? dataPL : dataANG;
 
         let items = data.map((item, idx) =>
             <DropDownTable

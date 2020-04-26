@@ -5,7 +5,7 @@ const data = [
     },
     {
         question: "Jak wstawić własne pytania??",
-        answer: "Wpisać zgodnie z przykładami w pliku : src/components/DropDownTable/DropDownTableDataInput.jsx"
+        answer: "Wpisać zgodnie z przykładami w pliku : src/components/DropDownTable/DropDownTableDataInput__pl.jsx"
     },
     {
         question: "Mogę zmienić kolory?",

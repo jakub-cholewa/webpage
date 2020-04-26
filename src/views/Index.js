@@ -43,6 +43,15 @@ class Index extends React.Component {
   componentWillUnmount() {
     document.body.classList.toggle("index-page");
   }
+
+  state = {
+      lang: "pl",
+  };
+
+  changeLang = () => {
+    this.setState( { lang: this.state.lang === "pl" ? "en" : "pl"});
+  };
+
   render() {
     return (
       <>
@@ -50,7 +59,7 @@ class Index extends React.Component {
         <div className="wrapper">
           <PageHeader />
           <div className="main">
-            <QAndA />
+            <QAndA lang = {this.state.lang}/>
             <Basics />
             <Navbars />
             <Tabs />
