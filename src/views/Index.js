@@ -34,6 +34,7 @@ import NucleoIcons from "views/IndexSections/NucleoIcons.js";
 import Signup from "views/IndexSections/Signup.js";
 import Examples from "views/IndexSections/Examples.js";
 import Download from "views/IndexSections/Download.js";
+import QAndA from "views/IndexSections/QAndA.js";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -42,6 +43,15 @@ class Index extends React.Component {
   componentWillUnmount() {
     document.body.classList.toggle("index-page");
   }
+
+  state = {
+      lang: "pl",
+  };
+
+  changeLang = () => {
+    this.setState( { lang: this.state.lang === "pl" ? "en" : "pl"});
+  };
+
   render() {
     return (
       <>
@@ -49,6 +59,7 @@ class Index extends React.Component {
         <div className="wrapper">
           <PageHeader />
           <div className="main">
+            <QAndA lang = {this.state.lang}/>
             <Basics />
             <Navbars />
             <Tabs />

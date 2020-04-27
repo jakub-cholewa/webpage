@@ -12406,6 +12406,14 @@ hr {
     width: 70%;
     left: -200px; }
 
+.section-qas {
+  padding-bottom: 0;
+  overflow: hidden; }
+.section-qas .qa {
+  z-index: 2; }
+.section-qas img.path {
+  left: -400px; }
+
 .section-pagination .path {
   width: 65%;
   right: 0%;
