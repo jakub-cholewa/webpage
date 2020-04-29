@@ -51,7 +51,7 @@ class Tabs extends React.Component {
       <div className="section section-tabs">
         <Container>
           <div className="title">
-            <h3 className="mb-3">Członkowie WRSS</h3>
+            <h3 className="mb-3">Członkowie WRSS WEAIiIB</h3>
           </div>
           <Row>
             <Col className="ml-auto mr-auto" md="10" xl="6">
@@ -115,26 +115,61 @@ class Tabs extends React.Component {
                             <img
                               alt="..."
                               className="img-fluid rounded shadow"
-                              src={require("assets/img/Pazik.JPG")}
-                              style={{ width: "150px", height: "150px"}}
+                              src={require("assets/img/Pazik.jpg")}
+                              style={{ width: "150px"}}
                             />
-                            <p> Przewo Damian Pazik </p>
+                            <p> Damian Pazik </p>
                           </Col>
                           <Col sm="3" xs="6">
                             <img
                               alt="..."
                               className="img-fluid rounded shadow"
-                              src={require("assets/img/Gosia.JPG")}
-                              style={{ width: "150px", height: "150px" }}
+                              src={require("assets/img/Gosia.jpg")}
+                              style={{ width: "150px" }}
                             />
-                            <p> Vice Małgorzata Sosin </p>
+                            <p> Małgorzata Sosin </p>
                           </Col>
                         </Row>
                     </TabPane>
                     <TabPane tabId="link5">
-                      <p>
-                        Tu będą fotki
-                      </p>
+                        <Row>
+                          <Col sm="3" xs="6">
+                            <img
+                              alt="..."
+                              className="img-fluid rounded shadow"
+                              src={require("assets/img/Majka.jpg")}
+                              style={{ width: "150px"}}
+                            />
+                            <p> Maria Tomasik </p>
+                          </Col>
+                          <Col sm="3" xs="6">
+                            <img
+                              alt="..."
+                              className="img-fluid rounded shadow"
+                              src={require("assets/img/Madzia.jpg")}
+                              style={{ width: "150px" }}
+                            />
+                            <p> Magdalena Włodarczyk </p>
+                          </Col>
+                            <Col sm="3" xs="6">
+                            <img
+                              alt="..."
+                              className="img-fluid rounded shadow"
+                              src={require("assets/img/Ola.jpg")}
+                              style={{ width: "150px"}}
+                            />
+                            <p> Aleksandra Wołowiec </p>
+                          </Col>
+                            <Col sm="3" xs="6">
+                            <img
+                              alt="..."
+                              className="img-fluid rounded shadow"
+                              src={require("assets/img/Mati.jpg")}
+                              style={{ width: "150px"}}
+                            />
+                            <p> Mateusz Bartosik </p>
+                          </Col>
+                        </Row>
                     </TabPane>
                     <TabPane tabId="link6">
                       <p>
