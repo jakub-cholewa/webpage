@@ -37,8 +37,8 @@ class QAndA extends React.Component {
         let keyword = event.target.value;
         this.setState({search: keyword})
     }
-
-
+    
+    
     render() {
 
         let data = this.props.lang === "pl" ? dataPL : dataANG;
@@ -60,7 +60,11 @@ class QAndA extends React.Component {
         );
 
         return (
+
             <div className="section section-navbars">
+                <FormGroup>
+                    <Input defaultValue="" placeholder="Regular" type="text" />
+                </FormGroup>
 
                 <Container>
                     <h1>
