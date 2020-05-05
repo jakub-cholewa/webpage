@@ -28,22 +28,22 @@ const bigChart = {
 
     return {
       labels: [
-        "JUN",
-        "FEB",
+        "STY",
+        "LUT",
         "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "KWI",
+        "MAJ",
+        "CZE",
+        "LIP",
+        "SIE",
+        "WRZ",
+        "PAŹ",
+        "LIS",
+        "GRU"
       ],
       datasets: [
         {
-          label: "Data",
+          label: "Liczba uczestników",
           fill: true,
           backgroundColor: gradientFill,
           borderColor: "#1d8cf8",
