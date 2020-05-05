@@ -37,8 +37,8 @@ class QAndA extends React.Component {
         let keyword = event.target.value;
         this.setState({search: keyword})
     }
-
-
+    
+    
     render() {
 
         let data = this.props.lang === "pl" ? dataPL : dataANG;
