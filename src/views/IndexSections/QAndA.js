@@ -46,9 +46,11 @@ class QAndA extends React.Component {
         let searchPlaceHolder = text.searchPlaceHolder[this.props.lang];
 
         let items = data.filter((item) => {
-            if (this.state.search == "")
+            if (this.state.search === "")
                 return item
             else if (item.tags.map(tag => tag.toLowerCase()).some(tag => this.state.search.toLowerCase().includes(tag)))
+                return item
+            else if (this.state.search.trim().toLowerCase().split(" ").some(serached => item.tags.map(tag => tag.toLowerCase()).some(tag => tag.includes(serached))))
                 return item
         }).map((item, idx) =>
             <DropDownTable
@@ -60,9 +62,9 @@ class QAndA extends React.Component {
         );
 
         return (
-            <div className="section section-navbars">
+            <div id="menu-dropdown">
 
-                <Container>
+                <Container >
                     <h1>
                         {text.title[this.props.lang]}
                     </h1>

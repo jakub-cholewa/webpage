@@ -86,27 +86,31 @@ class RowItem extends React.Component {
     render() {
         return (
             <div>
-                <Navbar className={this.props.questionColor} expand="lg"
-                        style={{cursor: "pointer", marginBottom: "0px", marginTop: "20px"}}
-                        onClick={this.toggleRow.bind(this)}>
-                    <Container>
-                        <div className="navbar-translate">
-                            <NavbarBrand href="#pablo">
-                                {this.props.q}
-                            </NavbarBrand>
-                        </div>
-                    </Container>
-                </Navbar>
-                {this.state.open === true ? (
-                    <Navbar className={this.props.answerColor} expand="lg">
+                <Container>
+                    <Navbar className={this.props.questionColor} expand="lg"
+                            style={{cursor: "pointer", marginBottom: "0px", marginTop: "20px"}}
+                            onClick={this.toggleRow.bind(this)}>
                         <Container>
-                            <div className="text-muted" style={{textAlign: "justify"}}>
-                                {this.props.a}
+                            <div className="navbar-translate">
+                                <NavbarBrand href="#pablo">
+                                    {this.props.q}
+                                </NavbarBrand>
                             </div>
                         </Container>
                     </Navbar>
-                ) : (<p></p>
-                )}
+                    {this.state.open === true ? (
+                        <Navbar className={this.props.answerColor} expand="lg">
+                            <Container>
+                                <div className="text-muted" style={{textAlign: "justify"}}>
+                                    {this.props.a}
+                                </div>
+                            </Container>
+                        </Navbar>
+                    ) : (
+                        <p></p>
+                    )}
+
+                </Container>
             </div>
         )
     }
